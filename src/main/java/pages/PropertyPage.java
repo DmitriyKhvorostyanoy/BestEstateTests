@@ -35,7 +35,7 @@ public static void dwnldPDF() throws FileNotFoundException, InterruptedException
     System.out.println("FILE Path: " + pdf.getPath());
    // if (pdf != null) {
     //    pdf.delete();
-    }
+   // }
    //pdf.exists();
   // Thread.sleep(4000);
   // pdf.delete();
