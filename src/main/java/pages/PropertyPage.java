@@ -33,12 +33,9 @@ public static void fillContactForm(String name, String phone, String message){
 public static void dwnldPDF() throws FileNotFoundException, InterruptedException {
    File pdf = PDFdownload.download();
     System.out.println("FILE Path: " + pdf.getPath());
-   // if (pdf != null) {
-    //    pdf.delete();
-   // }
-   //pdf.exists();
-  // Thread.sleep(4000);
-  // pdf.delete();
+    pdf.exists();
+    Thread.sleep(3000);
+    pdf.delete();
 }
 
 }

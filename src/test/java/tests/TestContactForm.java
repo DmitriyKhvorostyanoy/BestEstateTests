@@ -17,7 +17,7 @@ import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
 import static pages.SearchResultPage.podrobneeBTNonPropertyCard;
 
 public class TestContactForm extends BaseTest {
-    @Ignore
+    //@Ignore
     @DisplayName("Проверка связи с агентом")
     @Description("гость отправляет форму со страницы проперти чтобы агент с ним связался")
     @Severity(SeverityLevel.CRITICAL)
