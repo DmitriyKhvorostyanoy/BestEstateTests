@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import java.io.FileNotFoundException;
 
-public class DownloadPDF extends BaseTest {
+public class TestDownloadPDF extends BaseTest {
 
     @DisplayName("Проверка связи с агентом")
     @Description("гость отправляет форму со страницы проперти чтобы агент с ним связался")

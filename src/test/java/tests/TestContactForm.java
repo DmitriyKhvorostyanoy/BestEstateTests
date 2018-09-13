@@ -13,7 +13,7 @@ import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
 import static pages.SearchResultPage.podrobneeBTNonPropertyCard;
 
 public class TestContactForm extends BaseTest {
-    @Ignore
+
     @Test
     public void contactMeForm() throws InterruptedException {
 
