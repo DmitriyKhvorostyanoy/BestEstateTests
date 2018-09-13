@@ -1,4 +1,4 @@
-package CustomClasses;
+package customClasses;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.AllureLifecycle;

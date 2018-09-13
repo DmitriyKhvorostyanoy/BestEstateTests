@@ -1,4 +1,4 @@
-package CustomClasses;
+package customClasses;
 
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.LogEvent;
