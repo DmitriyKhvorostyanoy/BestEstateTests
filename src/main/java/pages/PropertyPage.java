@@ -33,7 +33,7 @@ public static void fillContactForm(String name, String phone, String message){
 public static void dwnldPDF() throws FileNotFoundException, InterruptedException {
    File pdf = PDFdownload.download();
    pdf.exists();
-   Thread.sleep(8000);
+   Thread.sleep(4000);
    pdf.delete();
 }
 

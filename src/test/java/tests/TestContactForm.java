@@ -2,6 +2,7 @@ package tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import pages.MainPage;
 import pages.PropertyPage;
@@ -12,7 +13,7 @@ import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
 import static pages.SearchResultPage.podrobneeBTNonPropertyCard;
 
 public class TestContactForm extends BaseTest {
-
+    @Ignore
     @Test
     public void contactMeForm() throws InterruptedException {
 

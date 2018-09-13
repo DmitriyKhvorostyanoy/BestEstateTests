@@ -1,8 +1,10 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import pages.MainPage;
 import pages.PropertyPage;
@@ -27,5 +29,10 @@ public class BaseTest {
         clearBrowserCache();
         Configuration.timeout = 15000;
         open("https://best-estate.net/");
+    }
+    @AfterClass
+    public static void closeBrowser(){
+        Selenide.close();
+        //public static boolean holdBrowserOpen = Boolean.getBoolean("selenide.holdBrowserOpen");
     }
 }
