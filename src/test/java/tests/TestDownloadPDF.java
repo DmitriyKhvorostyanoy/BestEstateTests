@@ -10,8 +10,8 @@ import java.io.FileNotFoundException;
 
 public class TestDownloadPDF extends BaseTest {
 
-    @DisplayName("Проверка связи с агентом")
-    @Description("гость отправляет форму со страницы проперти чтобы агент с ним связался")
+    @DisplayName("загрузка PDF")
+    @Description("гость загружает PDF на старнице проперти")
     @Severity(SeverityLevel.CRITICAL)
     @Test
     public void downloadPDF() throws FileNotFoundException, InterruptedException {
