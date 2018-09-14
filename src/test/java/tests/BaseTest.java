@@ -6,9 +6,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import pages.MainPage;
-import pages.PropertyPage;
-import pages.SearchResultPage;
+import pages.*;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
@@ -17,12 +15,16 @@ public class BaseTest {
     static MainPage mainPage;
     static SearchResultPage searchResultPage;
     static PropertyPage propertyPage;
+    static HeaderPage header;
+    static FavoritesPage favoritesPage;
 
     @BeforeClass
     public static void setUp() {
         mainPage = new MainPage();
         searchResultPage = new SearchResultPage();
         propertyPage = new PropertyPage();
+        header = new HeaderPage();
+        favoritesPage= new FavoritesPage();
 
         SelenideLogger.addListener("allure", new AllureSelenide());
         System.setProperty("selenide.browser", "chrome");

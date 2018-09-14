@@ -25,7 +25,7 @@ public class TestContactForm extends BaseTest {
     public void contactMeForm() throws InterruptedException {
 
 
-        mainPage.fillAndSubmitSearchField("дом");
+        header.fillAndSubmitSearchField("дом");
         searchResultPage.podrobneeBTNonPropertyCard.click();
         propertyPage.contactMeBTN.click();
         propertyPage.fillContactForm("test","0667271805","это тестовое сообщение, его можно удалить");

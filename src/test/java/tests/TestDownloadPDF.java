@@ -15,7 +15,7 @@ public class TestDownloadPDF extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Test
     public void downloadPDF() throws FileNotFoundException, InterruptedException {
-        mainPage.fillAndSubmitSearchField("дом");
+        header.fillAndSubmitSearchField("дом");
         searchResultPage.podrobneeBTNonPropertyCard.click();
         propertyPage.dwnldPDF();
     }
