@@ -17,14 +17,18 @@ public class BaseTest {
     static PropertyPage propertyPage;
     static HeaderPage header;
     static FavoritesPage favoritesPage;
-
+    static CategoryFilterResultPage categoryFilterResultPage;
+    static CategoryFilterPage categoryFilterPage;
     @BeforeClass
     public static void setUp() {
+        categoryFilterResultPage = new CategoryFilterResultPage();
         mainPage = new MainPage();
         searchResultPage = new SearchResultPage();
         propertyPage = new PropertyPage();
         header = new HeaderPage();
         favoritesPage= new FavoritesPage();
+        categoryFilterPage = new CategoryFilterPage();
+
 
         SelenideLogger.addListener("allure", new AllureSelenide());
         System.setProperty("selenide.browser", "chrome");
