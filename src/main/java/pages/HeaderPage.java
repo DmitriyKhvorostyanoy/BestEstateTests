@@ -10,7 +10,8 @@ public class HeaderPage {
             submitSearchField=$("#edit-submit-search-page"),
             favoritesBTN=$("#flag-counter-favorites"),
             menuHeaderBTN=$(By.xpath("//*[@class='text' and text()='Меню']")),
-            categoryFlatsInMenu=$(By.xpath("//*[@id='main-menu-links']//*[text()='Квартиры']"));
+            categoryFlatsInMenu=$(By.xpath("//*[@id='main-menu-links']//*[text()='Квартиры']")),
+            categoryHousesInMenu=$(By.xpath("//*[@id='main-menu-links']//*[text()='Дома']"));
 
     public static void fillAndSubmitSearchField(String text) {
         searchHeaderField.sendKeys(text);

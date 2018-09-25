@@ -32,7 +32,7 @@ public class TestOfFilterOfFlatsCategory extends BaseTest {
         categoryFilterResultPage.objects_with2_FlatsInTitle.shouldHave(size(0));
         categoryFilterResultPage.objects_with4_FlatsInTitle.shouldHave(size(0));
 
-        int priceDigit = CategoryFilterResultPage.getPriceDigit();
+        int priceDigit = CategoryFilterResultPage.getPriceDigitOnFirstObject();
         int areaDigit=CategoryFilterResultPage.getAreaDigit();
 
         assertTrue(priceDigit >= 100000 & priceDigit <= 210000);

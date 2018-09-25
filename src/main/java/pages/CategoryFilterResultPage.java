@@ -14,18 +14,22 @@ public class CategoryFilterResultPage {
                                     objects_with4_FlatsInTitle=$$(By.xpath("//*[contains(@class,'views-row views-row')]//*[contains(text(),'4 комн')]")),
                                     objects_with1_FlatsInTitle=$$(By.xpath("//*[contains(@class,'views-row views-row')]//*[contains(text(),'1 комн')]"));
     public static SelenideElement   titleFlatsCategoryResultPage=$("#page-title"),
-                                    priceOnFirstObject=$(By.xpath("//*[contains(@class,'views-row views-row-1 views-row-odd views-row-first')]//*[@class='fix-price']/span[1]")),
-                                    areaOnFirstObject=$(By.xpath("//*[contains(@class,'views-row views-row-1 views-row-odd views-row-first')]//*[@class='options-property']/span[1]"));
+                                    priceOnFirstObject=$(By.xpath("//*[contains(@class,'views-row views-row-1 views-row-odd views-row-first')]//*[contains(@class,'currency usd active')]")),
+                                    priceOnFourthObject=$(By.xpath("//*[contains(@class,'views-row views-row-4 views-row')]/descendant::*[contains(@class,'currency usd active')]")),
+                                    areaOnFirstObject=$(By.xpath("//*[contains(@class,'views-row views-row-1 views-row-odd views-row-first')]//*[@class='options-property']/span[1]")),
+                                    default_value_of_dropdown_list_of_sorting =$(By.xpath("//*[@class='views-exposed-widget select-rebuild sort jquery-once-2-processed']/child::*[contains(text(),'добавления')]")),
+                                    open_sorting_filter=$(By.xpath("//*[contains(@class,'views-exposed-widget select-rebuild sort jquery-once-2-processed')]/child::*[contains(@class,'open-filter')]")),
+                                    sort_by_AscendingPrice=$(By.xpath("//*[contains(@class,'views-exposed-widget select-rebuild sort jquery-once-2-processed')]/descendant::*[contains(text(),'возрастанию цены')]")),
+                                    sort_by_Descending_price=$(By.xpath("//*[contains(@class,'views-exposed-widget select-rebuild sort jquery-once-2-processed')]/descendant::*[contains(text(),'убыванию цены')]"));
 
-
-    public static int getPriceDigit() {
+    public static int getPriceDigitOnFirstObject() {
         String stringPrice = priceOnFirstObject.getText();
         System.out.println(stringPrice);
         String price1 = stringPrice.replaceAll("[^0-9]", "");
         System.out.println(price1);
-        int priceDigit = Integer.parseInt(price1);
-        System.out.println(priceDigit);
-        return priceDigit;
+        int priceDigit1 = Integer.parseInt(price1);
+        System.out.println(priceDigit1);
+        return priceDigit1;
     }
     public static int getAreaDigit(){
         String stringArea=areaOnFirstObject.getText();
@@ -37,4 +41,14 @@ public class CategoryFilterResultPage {
         System.out.println("this is integer "+areaDigit);
         return areaDigit;
     }
+    public static int getPriceDigitOnFourthObject() {
+        String stringPrice = priceOnFourthObject.getText();
+        System.out.println(stringPrice);
+        String price1 = stringPrice.replaceAll("[^0-9]", "");
+        System.out.println(price1);
+        int priceDigit4 = Integer.parseInt(price1);
+        System.out.println(priceDigit4);
+        return priceDigit4;
+    }
+
 }
