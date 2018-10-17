@@ -36,8 +36,16 @@ public static void setting_area_and_price_filter (String minArea,String maxArea,
     max_price.sendKeys("\b\b\b\b\b\b\b");
     max_price.sendKeys(maxPrice);
 }
+    public static void setFlatsCategory() {
+       typeOfFlatsFilter.hover();
+       ekonomKlassCheckBox.click();
+       bisnessKlassCheckBox.click();
+    }
 
-
-
+    public void setRoomQuantity() {
+        number_rooms_filter.hover();
+        one_room_chckbx.click();
+        three_room_chckbx.click();
+    }
 
 }
