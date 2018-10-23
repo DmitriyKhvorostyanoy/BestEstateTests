@@ -7,7 +7,7 @@ import org.junit.Test;
 public class TestSearchByStreetName extends BaseTest {
 
         @Test
-        public void searchByCodeOfProperty() {
+        public void searchByStreetName() {
             header.fillAndSubmitSearchField("отакара яроша");
             searchResultPage.pageTitle.shouldHave(Condition.exactText("Результаты поиска"));
             searchResultPage.cardsWithSearchedStreet.shouldHave(CollectionCondition.sizeGreaterThanOrEqual(1));

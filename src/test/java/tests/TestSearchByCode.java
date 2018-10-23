@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class TEstSearchByCode extends BaseTest {
+public class TestSearchByCode extends BaseTest {
     @DisplayName("Поиск по коду недвижимости")
     @Description("вводим в поле поиска в хедере валидный код и на  страице результатов поиска смотрим чтоб было найдена одна карточка с таким кодом")
     @Severity(SeverityLevel.CRITICAL)
