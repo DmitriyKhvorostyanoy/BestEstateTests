@@ -23,7 +23,6 @@ public class PropertyPage {
 
 public static void fillContactForm(String name, String phone, String message){
     modalNameField.sendKeys(name);
-   // modalMessageField.sendKeys("\b\b\b\b\b");
     modalPhoneField.setValue(phone);
     modalMessageField.sendKeys(message);
     modalCheckbox.click();

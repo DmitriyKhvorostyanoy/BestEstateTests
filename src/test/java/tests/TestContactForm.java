@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -14,6 +15,7 @@ import pages.PropertyPage;
 import pages.SearchResultPage;
 
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.screenshot;
 import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
 import static pages.SearchResultPage.podrobneeBTNonPropertyCard;
 
@@ -30,7 +32,6 @@ public class TestContactForm extends BaseTest {
         searchResultPage.podrobneeBTNonPropertyCard.click();
         propertyPage.contactMeBTN.click();
         propertyPage.fillContactForm("test","667271805","это тестовое сообщение, его можно удалить");
-        Selenide.screenshot("screen");
-       // Thread.sleep(999999999);
+
     }
 }
