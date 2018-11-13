@@ -28,7 +28,7 @@ public class TestContactForm extends BaseTest {
         header.fillAndSubmitSearchField("дом");
         searchResultPage.podrobneeBTNonPropertyCard.click();
         propertyPage.contactMeBTN.click();
-        propertyPage.fillContactForm("test","667271805","это тестовое сообщение, его можно удалить");
+        propertyPage.fillContactForm("test","667271805000","это тестовое сообщение, его можно удалить");
        // Thread.sleep(999999999);
     }
 }
