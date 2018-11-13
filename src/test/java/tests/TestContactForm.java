@@ -1,6 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -28,8 +29,8 @@ public class TestContactForm extends BaseTest {
         header.fillAndSubmitSearchField("дом");
         searchResultPage.podrobneeBTNonPropertyCard.click();
         propertyPage.contactMeBTN.click();
-        propertyPage.fillContactForm("test","","это тестовое сообщение, его можно удалить");
-        //yevhen.zushchenko@jaguar-team.com igor.deulenko@jaguar-team.com
+        propertyPage.fillContactForm("test","667271805","это тестовое сообщение, его можно удалить");
+        Selenide.screenshot("screen");
        // Thread.sleep(999999999);
     }
 }
