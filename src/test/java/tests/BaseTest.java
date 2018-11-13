@@ -33,6 +33,7 @@ public class BaseTest {
         SelenideLogger.addListener("allure", new AllureSelenide());
         System.setProperty("selenide.browser", "chrome");
         clearBrowserCache();
+        Configuration.browserSize = "1920x1080";
         Configuration.timeout = 15000;
         open("https://best-estate.net/");
     }
